@@ -1,0 +1,574 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+.head{
+    height: 60px;
+    background: black;
+    line-height: 60px;
+    text-align: center;
+    /* display: flex;
+    justify-content: space-between; */
+}
+.head_list{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.head_list li:nth-child(n){
+    height: 60px;
+    flex-grow: 1;
+    font-size: 20px;
+    /* margin: 10px; */
+}
+/* .head_list li:nth-child(6){
+    color: gray;
+} */
+
+.nav-more a{
+    color: gray;
+    font-size: 16px;
+}
+
+.serve a{
+    color: white;
+}
+.login a{
+    color: white;
+}
+
+.head_list li>a:hover{
+    color: orange;
+}
+
+.nav-logo{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-image: url("images/sprite1.png");
+    background-position: 100px 208px;      
+}
+
+.search {
+    /* -web-kit-appearance:none; */
+    -moz-appearance: none;
+    border-radius: 30px;
+    width: 180px;
+    height: 25px;
+    background: url("images/search.png");
+    background-size: contain;
+    outline: 0;
+}
+
+
+.middle{
+    width: 700px;
+    margin-left: 100px;
+    margin-top: 50px;
+    float: left;
+}
+
+
+.middle p{
+    font-size: 13px;
+    color: black;
+}
+#title{
+    width: 600px;
+    color:black;
+    font-size: 25px;
+}
+.lyric {
+    text-align: center;
+}
+.light{
+    font-size: 13px;
+    color: orange;
+}
+
+.lyric span{
+    margin: 10px; 
+}
+
+
+#lyric_comment {
+    height: 13px;
+    width: 14px;
+    display: inline-block;
+    background-image: url("images/comment.jpg");
+    margin: 0 0 0 20px;
+}
+
+.player{
+    width: 700px; 
+    margin-left: 700px;
+    float: left;
+    position: relative;
+    top: -260px;
+}
+
+@keyframes animation1{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.player_top{
+    width: 265px;
+    height: 265px;
+    margin-left: 217px;
+    border: 1px solid gray;
+    border-radius:  50%;
+    /* position: absolute; */
+}
+.playerTop_con{
+    width: 255px;
+    height: 255px;
+    /* margin-left: 220px; */
+    background-image: url("images/img1.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    border: 1px solid gray;
+    position: relative;
+    top: 4px;
+    left: 4px;
+    animation: animation1 8s linear infinite;
+}
+#player_dec{
+    height: 100px;
+    width: 100px;
+    /* margin-left: 200px; */
+    /* float: left; */
+    position: relative;
+    top: -180px;
+    left: 85px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid gray;
+}
+#player_dec2{
+    height: 30px;
+    width: 30px;
+    /* float: left; */
+    /* margin-left: 120px;  */
+    position: relative;
+    top: -250px;
+    left: 120px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid gray;
+}
+
+.player_mid {
+    height: 42px;
+    width: 500px;
+    position: relative;
+    left: 150px;
+}
+
+.play{
+    height: 42px;
+    width: 42px;
+    background-image: url("images/player.jpg");
+    background-position: 114px 88px;
+    float: left;
+}
+#playerBtn:hover {
+    cursor: pointer;
+}
+.zan {
+    height: 42px;
+    width: 42px;
+    background-image: url("images/player.jpg");
+    background-position: 70px 42px;
+    float: left;
+}
+/* .zan:hover {
+    cursor: pointer;
+} */
+
+/* #prograssBar {
+    width: 100%;
+    height: 5px;
+    border-radius: 1.3em;
+    /* background: #ffcd2d; 
+    float: left;
+    margin: 20px 0 0 10px;
+    display: inline; 
+}
+
+#playerSlice {
+    width: 0px;
+    height: 5px;
+    background-color: #ffcd2d;
+}
+
+#playerSlice {
+    height: 5px;
+    width: 310px;
+    border-radius: 1.3em;
+    background: rgba(0, 0, 0, 0.3);
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#playerBar {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-image: url("images/player.jpg");
+    background-position: 253px 87px;
+    float: left;
+    position: relative; 
+    /* left: -302px; 
+    top: 18px;
+    /* left: -302px; 
+} */
+
+#prograssBar {
+    float: left;
+    position: relative;
+    width: 60%;
+    height: 5px;
+    border-radius: 1.3em;
+    margin: 20px 0 0 13px;
+    background: gray;
+    display: inline;
+}
+
+#playerSlice {
+    width: 0px;
+    height: 5px;
+    border-radius: 1.3em;
+    background: #ffcd2d;
+}
+#slice {
+    width: 0px;
+    height: 4px;
+
+}
+#playerBar {
+    width: 10px;
+    height: 10px;
+    background-image: url("images/player.jpg");
+    background-position: 253px 88px; 
+    position: absolute;
+    top: -3px;
+}
+
+#playtime {
+    color: rgba(0, 0, 0, 0.3);
+    position: relative;
+    top: 14px;
+    left: 10px;
+}
+
+#sound {
+    width: 24px;
+    height: 20px;
+    float: left;
+    background-image: url("images/player.jpg");
+    background-position: 210px 88px;
+    position: relative;
+    left: 370px;
+    top: -17px;
+}
+#sound:hover{
+    cursor: pointer;
+}
+
+
+.downloadBtn {
+    /* transform: scaleY(-0.5); */
+    width: 200px;
+    height: 40px;
+    border-radius: 1.3em;
+    background-image: url("images/player.jpg");
+    background-position: 277px 40px;
+    margin-left: 250px;
+    position: absolute;
+    top: 400px;
+}
+.downloadLogo {
+    width: 18px;
+    height: 18px;
+    background-image: url("images/player.jpg");
+    background-position: 276px 88px;
+    float: left;
+    position: relative;
+    left: 30px;
+    top: 8px;
+}
+.downloadBtn span{
+    color: black;
+    display: block;
+    position: relative;
+    left: 33px;
+    top: 8px;
+}
+.downloadBtn:hover {
+    cursor: pointer;
+}
+
+.listener {
+    width: 400px;
+    height: 60px;
+    float: left;
+    position: relative;
+    top: 150px;
+    left: 100px;
+}
+.listener .head_sculpture {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-image: url("./images/郭子仪.jpg");
+    background-size: cover;
+    float: left;
+}
+.listener .listening {
+    height: 54px;
+    width: 250px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+    background-image: url("images/showAdBg.jpg");
+}
+
+.listener .listening span{
+    color: rgb(155, 41, 208);
+    font-size: 13px;
+    margin-left: 35px;
+}
+
+.listening .song {
+    margin: 10px 0 5px 35px;
+    color: rgb(92, 30, 121);
+    font-size: 13px;
+}
+.listening .song a{
+    margin-left: 45px;
+    color: #9e3ff7;
+}
+
+.listening .song img{
+    height: 10px;
+    width: 10px;
+}
+
+
+
+
+
+
+
+
+
+.bottom {
+    width: 100%;
+    height: 400px;
+    margin-top: 90px;
+    float: left;
+    color: black;
+    /* position: fixed; */
+}
+
+.bottom>span{
+    color: black;
+    position: relative;
+    top: -50px;
+    left: -850px;
+} 
+ .bottom>span:nth-child(1){
+    font-size: 20px;
+}
+.bottom>span:nth-child(2){
+    font-size: 15px;
+    margin-left: 15px;
+}
+#comment_area {
+    width: 900px;
+    height: 300px;
+    margin-left: 200px;
+    border-top: 1px solid rgba(133, 128, 128, 0.6);
+    float: left;
+}
+#com_sculpture{
+    width: 50px;
+    height: 50px;
+    margin: 20px 20px;
+    float: left;
+}
+#com_sculpture img{
+    width: 50px;
+    height: 50px;
+}
+#comment_con {
+    resize: none;
+    color: black;
+    width: 700px;
+    height: 150px;
+    margin-top: 20px;
+    padding: 20px 0 0 20px;
+    border: 1px solid rgba(133, 128, 128, 0.6);
+    float: left;
+}
+#com_infor {
+    width: 900px;
+    height: 20px;
+    float: left;
+    margin: 15px 0 0 90px;
+}
+#com_infor .com_commenticon{
+    height: 20px;
+    width: 20px;
+    float: left;
+    background: url("./images/commenticon.png");
+}
+#com_infor span{
+    color: rgba(133, 128, 128, 0.6);
+    font-size: 13px;
+    line-height: 20px;
+    float: left;
+    margin-left: 540px;
+}
+#com_infor button{
+    border: 1px solid #ffcd2d;
+    height: 30px;
+    width: 80px;
+    background: #ffcd2d;
+    margin-left: 10px;
+    position: relative;
+    top: -3px;
+}
+
+#comments{
+    width: 900px;
+    height: 480px;
+    margin-left: 200px;
+    float: left;
+    overflow: hidden;
+    /* position: absolute; */
+}
+#comments #coms_wond{
+    color: black; 
+    font-size: 20px;
+    /* position: relative;
+    left: ; */
+    margin-left: 50px;
+    /* margin-bottom: 50px; */
+}
+
+#com_list {
+    width: 900px;
+    height: 360px;
+    border-top: 1px solid rgba(133, 128, 128, 0.6);
+    position: relative;
+    top: 30px;
+}
+#com_list>div:nth-child(n){
+    height: 120px;
+    border-bottom: 1px solid rgba(133, 128, 128, 0.6);
+}
+
+
+.list_scu {
+    height: 50px;
+    width: 50px;
+    background: url("images/郭子仪.jpg");
+    background-size: cover;
+    float: left;
+}
+
+/* #com_list .coms p{
+    color: black;
+    font-size: 13px;
+} */
+.coms_per{
+    color: #ffcd2d;
+    font-size: 16px;
+    margin-left: 50px;
+    /* float: left; */
+}
+.coms_share {
+    color: black;
+    font-size: 16px;
+    float: right;
+}
+.comsContent{
+    color: black;
+    font-size: 13px;
+    margin-left: 50px;
+}
+
+.del{
+    color: black;
+    font-size: 13px;
+    margin: 0 10px 0 10px;
+    float: right;
+}
+.res{
+    color: black;
+    font-size: 13px;
+    margin: 0 10px 0 10px;
+    float: right;
+}
+.coms_attr{
+    width: 900px;
+    height: 13px;
+    /* background-color: blueviolet; */
+    position: relative;
+    top: 30px;
+}
+
+.time {
+    width: 200px;
+    height: 13px;
+    font-size: 13px;
+    line-height: 13px;
+    color: black;
+    /* background-color: blue; */
+    float: left;
+}
+.good {
+    color: black;
+    font-size: 13px;
+    /* background-color: red; */
+    float: right;
+}
+
+#pages{
+    height: 45px;
+    width: 300px;
+    /* background-color: red; */
+    float: left;
+    position: relative;
+    left: -630px;
+    top: 490px;
+}
+
+#pages>div{
+    height: 30px;
+    width: 30px;
+    background-color: rgba(133, 128, 128, 0.5);
+    border: 1px solid gray;
+    margin: 8px 5px 0 5px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    float: left;
+}
+#pages>div:hover {
+    background-color: #ffcd2d;
+    cursor: pointer;
+}
+
+/* #com_list>div{
+    border: 1px solid red;
+} */
